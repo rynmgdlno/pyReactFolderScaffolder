@@ -44,6 +44,24 @@
           {
             "name": "formButton",
             "type": "component-folder"
+          },
+          {
+            "name": "icon-buttons",
+            "type": "directory",
+            "children": [
+              {
+                "name": "googleButton",
+                "type": "component-folder"
+              },
+              {
+                "name": "facebookButton",
+                "type": "component-folder"
+              },
+              {
+                "name": "appleButton",
+                "type": "component-folder"
+              }
+            ]
           }
         ]
       }
@@ -56,6 +74,14 @@
       {
         "name": "menu",
         "type": "component-folder"
+      },
+      {
+        "name": "composer",
+        "type": "component-folder"
+      },
+      {
+        "name": "topBar",
+        "type": "component-folder"
       }
     ]
   },
@@ -66,6 +92,10 @@
       {
         "name": "global-styles.scss",
         "type": "file"
+      },
+      {
+        "name": "theme.scss",
+        "type": "file"
       }
     ]
   },
@@ -75,6 +105,14 @@
     "children": [
       {
         "name": "home",
+        "type": "component-folder"
+      },
+      {
+        "name": "contact",
+        "type": "component-folder"
+      },
+      {
+        "name": "work",
         "type": "component-folder"
       }
     ]
