@@ -4,14 +4,17 @@ A Python script for scaffolding basic React or Next.js folder structure from a J
 ### Basic Usage:
 To use simply clone this repo into your projects root directory, write your project's hierarchy JSON file in the root directory (ideally written while planning out the project),
 and title it "structure.json",
-then call the script in your terminal as such: "python3 ./projectScaffolder/main.py".
+then call the script in your terminal as such: 
 
-You can also run it without providing "structure.json" and it will use the example in "example.json".
+`python3 ./projectScaffolder/main.py`.
+
+I've provided an example [structure.json](https://github.com/rynmgdlno/pyReactFolderScaffolder/blob/master/structure.json).
 
 ### JSON Formatting:
-The JSON file must contain only a single array with two entries, the first of which is an object with a single {key: value} pair to denote the project type, the second is an array of nodes. Each node must be an object with the required properties "name" and "type", who's values must be strings correlating to the currently accepted node types, with an optional property "children" who's value must be an array of nodes. Simply omit the "children" property if there are no children. Directories, Components, and Pages can have children.
+The JSON file must contain only a single array with two entries, the first of which is an object with a single `{key: value}` pair to denote the project type, the second is an array of nodes. Each node must be an object with the required properties `name` and "type", who's values must be strings correlating to the currently accepted node types, with an optional property "children" who's value must be an array of nodes. Simply omit the "children" property if there are no children. Directories, Components, and Pages can have children.
 
 Example:
+```
 [
   {
     "projectType": "react"
@@ -41,7 +44,7 @@ Example:
     ]
   ]
 ]
-
+```
 ### Project Types:
 The script currently recognizes two "projectTypes": "react" and "nextjs". 
 
