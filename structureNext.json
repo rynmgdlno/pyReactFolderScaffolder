@@ -1,0 +1,17 @@
+[
+  {
+    "projectType": "react"
+  },
+  [
+    {
+      "name": "pages",
+      "type": "directory",
+      "children": [
+        {
+          "name": "contactAndStuff",
+          "type": "page"
+        }
+      ]
+    }
+  ]
+]

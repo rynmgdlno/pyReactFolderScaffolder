@@ -1,82 +1,87 @@
 [
   {
-    "name": "assets",
-    "type": "directory",
-    "children": [
-      {
-        "name": "images",
-        "type": "directory"
-      },
-      {
-        "name": "videos",
-        "type": "directory"
-      },
-      {
-        "name": "svg",
-        "type": "directory"
-      }
-    ]
+    "projectType": "react"
   },
-  {
-    "name": "components",
-    "type": "directory",
-    "children": [
-      {
-        "name": "customButton",
-        "type": "component-folder"
-      },
-      {
-        "name": "formInput",
-        "type": "component-folder"
-      },
-      {
-        "name": "buttons",
-        "type": "directory",
-        "children": [
-          {
-            "name": "closeButton",
-            "type": "component-folder"
-          },
-          {
-            "name": "menuButton",
-            "type": "component-folder"
-          },
-          {
-            "name": "formButton",
-            "type": "component-folder"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "features",
-    "type": "directory",
-    "children": [
-      {
-        "name": "menu",
-        "type": "component-folder"
-      }
-    ]
-  },
-  {
-    "name": "global",
-    "type": "directory",
-    "children": [
-      {
-        "name": "global-styles.scss",
-        "type": "file"
-      }
-    ]
-  },
-  {
-    "name": "views",
-    "type": "directory",
-    "children": [
-      {
-        "name": "home",
-        "type": "component-folder"
-      }
-    ]
-  }
+  [
+    {
+      "name": "pages",
+      "type": "directory",
+      "children": [
+        {
+          "name": "contact",
+          "type": "page"
+        },
+        {
+          "name": "about",
+          "type": "page"
+        }
+      ]
+    },
+    {
+      "name": "src",
+      "type": "directory",
+      "children": [
+        {
+          "name": "assets",
+          "type": "directory",
+          "children": [
+            {
+              "name": "images",
+              "type": "directory"
+            },
+            {
+              "name": "copy",
+              "type": "directory"
+            },
+            {
+              "name": "svg",
+              "type": "directory"
+            }
+          ]
+        },
+        {
+          "name": "components",
+          "type": "directory",
+          "children": [
+            {
+              "name": "formInput",
+              "type": "component"
+            },
+            {
+              "name": "buttons",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "closeButton",
+                  "type": "component"
+                },
+                {
+                  "name": "menuButton",
+                  "type": "component"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "features",
+          "type": "directory",
+          "children": [
+            {
+              "name": "menu",
+              "type": "component"
+            },
+            {
+              "name": "composer",
+              "type": "component"
+            },
+            {
+              "name": "topBar",
+              "type": "component"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 ]
