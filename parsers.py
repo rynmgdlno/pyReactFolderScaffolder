@@ -6,6 +6,8 @@ def writeComponent(string):
     try:
         with open('index.js', 'w') as component:
             component.write(string)
+        with open('index.js', 'w') as component:
+            component.write(string)
     finally:
         component.close()
 
@@ -18,8 +20,8 @@ def process(node, projectType):
         os.chdir(f"./{name}")
         writeComponent(
             nextPageComponent(name)
-            if type == 'page'
-            else reactComponent(name)
+             if type == 'page'
+             else reactComponent(name)
         )
         try:
             scss = (
@@ -31,13 +33,11 @@ def process(node, projectType):
             scss.close()
         os.chdir('../')
     if type == 'directory':
-        if (
-            projectType == 'nextjs' and
-            name not in ['api', 'pages', 'public', 'styles']
-        ):
+        if projectType == 'react':
             os.mkdir(name)
-        else:
-            os.mkdir(name)
+        elif projectType == 'nextjs':
+            if name not in ['api', 'pages', 'public', 'styles']:
+                os.mkdir(name)
         if 'children' in node:
             os.chdir(f"./{name}")
             for child in node['children']:

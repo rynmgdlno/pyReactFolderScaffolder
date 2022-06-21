@@ -47,3 +47,23 @@ def nextPageComponent(name):
         f"""    </main>\n  );\n}};\n\n"""
         f"""export default {component}"""
     )
+
+# TODO: Modify this for og tags:
+def nextDynamicRoute(name):
+    component = componentName(name)
+    formatted = formatName(component)
+    return (
+        f"""import Head from "next/head";\n\n"""
+        f"""import styles from "./{name}.module.scss";\n\n"""
+        f"""const {component} = () => {{\n"""
+        f"""  return (\n    <main>\n"""
+        f"""      <Head>\n"""
+        f"""        <title>{formatted}</title>\n"""
+        f"""        <meta name="{formatted}" content="" />\n"""
+        f"""        <link rel="icon" href="/favicon.ico" />\n"""
+        f"""      </Head>\n"""
+        f"""      <div>\n\n"""
+        f"""      </div>\n"""
+        f"""    </main>\n  );\n}};\n\n"""
+        f"""export default {component}"""
+    )
